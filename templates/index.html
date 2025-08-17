@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>八字排盘在线工具</title>
+    <!-- TailwindCSS via CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js for five‑element chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+    <h1 class="text-2xl font-bold mb-4">八字排盘在线工具</h1>
+    <div class="w-full max-w-2xl bg-white shadow-md rounded px-6 py-4">
+      <!-- Input form -->
+      <div class="grid gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">姓名</label>
+          <input id="name" type="text" class="mt-1 w-full border rounded px-3 py-2" placeholder="请输入姓名" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">出生日期</label>
+          <input id="birthDate" type="date" class="mt-1 w-full border rounded px-3 py-2" min="1900-01-01" max="2100-12-31" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">出生时间</label>
+          <input id="birthTime" type="time" class="mt-1 w-full border rounded px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">出生地</label>
+          <div class="flex space-x-2 mt-1">
+            <select id="province" class="border rounded px-3 py-2 flex-1">
+              <option value="">省/直辖市</option>
+            </select>
+            <select id="city" class="border rounded px-3 py-2 flex-1">
+              <option value="">市</option>
+            </select>
+            <select id="district" class="border rounded px-3 py-2 flex-1">
+              <option value="">区/县</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">关系</label>
+          <select id="relationship" class="mt-1 w-full border rounded px-3 py-2">
+            <option value="本人">本人</option>
+            <option value="伴侣">伴侣</option>
+            <option value="家人">家人</option>
+            <option value="朋友">朋友</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <button id="calculateBtn" class="bg-blue-500 text-white py-2 px-4 rounded">开始排盘</button>
+      </div>
+      <!-- Result section -->
+      <div id="result" class="mt-6 hidden">
+        <h2 class="text-xl font-semibold mb-2">排盘结果</h2>
+        <div id="pillars" class="grid grid-cols-4 gap-4 mb-4"></div>
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+          <div class="w-full md:w-1/2 mb-4 md:mb-0">
+            <canvas id="elementChart"></canvas>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div id="analysis" class="text-sm leading-relaxed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

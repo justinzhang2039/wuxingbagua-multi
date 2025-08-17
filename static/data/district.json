@@ -1,0 +1,18 @@
+[
+  {"code": "110101", "name": "东城区", "cityCode": "110100"},
+  {"code": "110102", "name": "西城区", "cityCode": "110100"},
+  {"code": "310101", "name": "黄浦区", "cityCode": "310100"},
+  {"code": "310104", "name": "徐汇区", "cityCode": "310100"},
+  {"code": "440103", "name": "荔湾区", "cityCode": "440100"},
+  {"code": "440104", "name": "越秀区", "cityCode": "440100"},
+  {"code": "440305", "name": "南山区", "cityCode": "440300"},
+  {"code": "440306", "name": "福田区", "cityCode": "440300"},
+  {"code": "320102", "name": "玄武区", "cityCode": "320100"},
+  {"code": "320104", "name": "秦淮区", "cityCode": "320100"},
+  {"code": "320505", "name": "姑苏区", "cityCode": "320500"},
+  {"code": "320506", "name": "吴中区", "cityCode": "320500"},
+  {"code": "330102", "name": "上城区", "cityCode": "330100"},
+  {"code": "330106", "name": "西湖区", "cityCode": "330100"},
+  {"code": "330203", "name": "海曙区", "cityCode": "330300"},
+  {"code": "330206", "name": "北仑区", "cityCode": "330300"}
+]

@@ -1,0 +1,10 @@
+[
+  {"code": "110100", "name": "北京市", "provinceCode": "110000"},
+  {"code": "310100", "name": "上海市", "provinceCode": "310000"},
+  {"code": "440100", "name": "广州市", "provinceCode": "440000"},
+  {"code": "440300", "name": "深圳市", "provinceCode": "440000"},
+  {"code": "320100", "name": "南京市", "provinceCode": "320000"},
+  {"code": "320500", "name": "苏州市", "provinceCode": "320000"},
+  {"code": "330100", "name": "杭州市", "provinceCode": "330000"},
+  {"code": "330300", "name": "宁波市", "provinceCode": "330000"}
+]
